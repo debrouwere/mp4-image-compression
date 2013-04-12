@@ -1,0 +1,10 @@
+MP4 image compression... what nonsense is this? Well, sometimes you have a bunch
+of similar images (like screenshots of how a web page changes over time) and 
+storing all those images as a video can give some pretty amazing space savings
+because video compression algorithms try to always store what has changed 
+since the last frame, not the full frame. But of course we don't want a 
+video, we want images. Well, we simply seek to the required frame and pause
+the video: that's our image right there.
+
+Run `./convert.sh` to see how it works. It will open a web browser with a 
+working example and it also calculates the space savings for you.
